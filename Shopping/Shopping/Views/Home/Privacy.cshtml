@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
+</script>
+<p>You have bypassed bot protection.</p>
+
+<img src="~/ps5.png" width="200" height="200" />
+
+<button class="g-recaptcha"
+        data-sitekey=""
+        data-callback='onSubmit'
+        data-action='submit'>
+    Submit
+</button>
+
+
+
