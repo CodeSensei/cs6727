@@ -15,12 +15,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Projects\GitHub\cs6727\Shopping\Shopping
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Projects/GitHub/cs6727/Shopping/Shopping/Views/Home/DataDome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXRhRG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/GitHub/cs6727/Shopping/Shopping/Views/Home/Google.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHb29nbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/GitHub/cs6727/Shopping/Shopping/Views/Home/GoogleStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHb29nbGVTdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Projects/GitHub/cs6727/Shopping/Shopping/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Projects/GitHub/cs6727/Shopping/Shopping/Views/Home/Perimeter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZXJpbWV0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Projects/GitHub/cs6727/Shopping/Shopping/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/GitHub/cs6727/Shopping/Shopping/Views/Home/PurchaseQuantity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdXJjaGFzZVF1YW50aXR5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projects/GitHub/cs6727/Shopping/Shopping/Views/Home/View.cshtml]

@@ -9,7 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Setup Datadome
 builder.Services.Configure<DataDomeConfig>(builder.Configuration.GetSection("DataDomeConfiguration"));
+
+// Setup Google
 builder.Services.Configure<GoogleRecaptchaV3Model>(builder.Configuration.GetSection("GoogleRecaptchaV3Config"));
 
 var app = builder.Build();
@@ -29,6 +32,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// Setup Datadome
 app.UseDataDome();
 
 app.MapControllerRoute(
