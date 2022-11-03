@@ -18,6 +18,8 @@ using Newtonsoft.Json.Linq;
 using System.Net;
 using Shopping.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Principal;
+using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 
 namespace Shopping.Controllers
 {
@@ -35,23 +37,6 @@ namespace Shopping.Controllers
             _recaptchV3Config = recaptchV3Config.Value;
             _context = context;
         }
-
-        //public async Task<IActionResult> PurchaseDemo()
-        //{
-        //    //if (id == null || _context.Product == null)
-        //    //{
-        //    //    return NotFound();
-        //    //}
-
-        //    var product = await _context.Product
-        //        .FirstOrDefaultAsync(m => m.ID == 1);
-        //    if (product == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return View(product);
-        //}
 
         // GET: Products/Details/5
         public async Task<IActionResult> PurchaseDemo()
@@ -85,10 +70,70 @@ namespace Shopping.Controllers
             };
             //Pass the studentDetailsViewModel to the view
             return View(accountProductViewModel);
-
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> PurchaseResult()
+        {
+            var product = await _context.Product
+            .FirstOrDefaultAsync(m => m.ID == 1);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            var account = await _context.Account
+            .FirstOrDefaultAsync(m => m.ID == 1);
+            if (account == null)
+            {
+                return NotFound();
+            }
+
+            //Creating the View model
+            AccountProductViewModel accountProductViewModel = new AccountProductViewModel()
+            {
+                Account = account,
+                Product = product
+            };
+
+            bool isJiggedAddress = false;
+            bool quantityLimitReached = false;
+            accountProductViewModel.PurchaseOutcome = "Thank you for the purchase";
+
+            // Jigged Address Check
+            if (account.Street.Contains("."))
+            {
+                isJiggedAddress = true;
+                
+            }
+
+            // Quantity Check
+            if(account.ItemsPurchased > 0)
+            {
+                quantityLimitReached = true;
+            }
+
+            if (isJiggedAddress)
+            {
+                accountProductViewModel.PurchaseOutcome = "Your address was jigged";
+            }
+            
+            if(quantityLimitReached)
+            {
+                accountProductViewModel.PurchaseOutcome = "You have reached quantity limit";
+            }
+            
+            if(isJiggedAddress && quantityLimitReached)
+            {
+                accountProductViewModel.PurchaseOutcome = "Your address was jigged AND You have reached quantity limit";
+            }
+
+
+
+            //Pass the studentDetailsViewModel to the view
+            return View(accountProductViewModel);
+        }
+
+            public IActionResult Index()
         {
             //createAssessment();
             return View();

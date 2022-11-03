@@ -22,7 +22,7 @@ namespace Shopping.Controllers
         // GET: Accounts
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Account.ToListAsync());
+              return View(await _context.Account.ToListAsync());
         }
 
         // GET: Accounts/Details/5
@@ -54,7 +54,7 @@ namespace Shopping.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,FirstName,LastName,Street,City,State,ZipCode")] Account account)
+        public async Task<IActionResult> Create([Bind("ID,FirstName,LastName,Street,City,State,ZipCode,ItemsPurchased")] Account account)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace Shopping.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,FirstName,LastName,Street,City,State,ZipCode")] Account account)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,FirstName,LastName,Street,City,State,ZipCode,ItemsPurchased")] Account account)
         {
             if (id != account.ID)
             {
@@ -148,14 +148,14 @@ namespace Shopping.Controllers
             {
                 _context.Account.Remove(account);
             }
-
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool AccountExists(int id)
         {
-            return _context.Account.Any(e => e.ID == id);
+          return _context.Account.Any(e => e.ID == id);
         }
     }
 }

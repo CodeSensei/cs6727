@@ -11,7 +11,7 @@ using Shopping.Data;
 namespace Shopping.Migrations
 {
     [DbContext(typeof(ShoppingContext))]
-    [Migration("20221103175423_InitialCreate")]
+    [Migration("20221103194406_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,6 +38,9 @@ namespace Shopping.Migrations
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ItemsPurchased")
+                        .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .IsRequired()

@@ -1,7 +1,7 @@
 ﻿@model Shopping.Models.Account
 
 @{
-    Layout = null;
+   
 }
 
 <!DOCTYPE html>
@@ -48,6 +48,11 @@
                 <label asp-for="ZipCode" class="control-label"></label>
                 <input asp-for="ZipCode" class="form-control" />
                 <span asp-validation-for="ZipCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ItemsPurchased" class="control-label"></label>
+                <input asp-for="ItemsPurchased" class="form-control" />
+                <span asp-validation-for="ItemsPurchased" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

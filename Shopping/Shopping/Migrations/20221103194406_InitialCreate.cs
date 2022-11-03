@@ -19,7 +19,8 @@ namespace Shopping.Migrations
                     Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     City = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     State = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ZipCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ZipCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ItemsPurchased = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
