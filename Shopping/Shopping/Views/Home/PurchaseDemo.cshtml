@@ -1,0 +1,87 @@
+﻿@model Shopping.Models.AccountProductViewModel
+
+@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+    <div>
+        <h4>Cart</h4>
+        <hr />
+        <dl class="row">
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Product.Description)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Product.Description)
+            </dd>
+        </dl>
+
+        <h4>Shipping Address</h4>
+        <hr />
+        <dl class="row">
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Account.FirstName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Account.FirstName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Account.LastName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Account.LastName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Account.Street)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Account.Street)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Account.City)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Account.City)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Account.State)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Account.State)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Account.ZipCode)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Account.ZipCode)
+            </dd>
+        </dl>
+
+        <h4>Order Summary</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Product.Cost)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Product.Cost)
+            </dd>
+        </dl>
+    </div>
+    <div>
+@*        <a asp-action="Edit" asp-route-id="@Model?.ID">Edit</a> |
+        <a asp-action="Index">Back to List</a>*@
+    </div>
+</body>
+</html>
