@@ -1,5 +1,6 @@
-# Protecting E-commerce Websites from Bad Bots
-![Nuget packages](https://github.com/samleeatl/cs6727/blob/main/company_logos.PNG)
+# Protecting Hyped Sales on E-commerce Websites from Bad Bots in 2022 <img src="https://github.com/samleeatl/cs6727/blob/main/bot.png" width=5% height=5%> 
+
+
 ## Description
 
 ## Features
@@ -9,7 +10,10 @@
 - Visual Studio 2022 or higher
 
 ## Installation
-- Simply clone this project down to your local repository and open the project using Visual Studio 2022 or higher. 
+Simply clone this project down to your local repository and open the project using Visual Studio 2022 or higher. 
+
+### License Key Setup
+You can add your license keys in the appsettings.json file.
 
 ### Libraries referenced
 ![Nuget packages](https://github.com/samleeatl/cs6727/blob/main/nuget.PNG)
@@ -23,4 +27,4 @@ This project already has the Asp.net Core code sample setup. All you need to do 
 This project already has the Asp.net Core code sample setup. All you need to do is setup your key located in appsettings.json
 
 ## Disclaimer
-This is an academic project created as part of the CS 6266 Information Security Practicum course at the Georgia Institute of Technology. This project is developed with the intention of using this tool only for educational purpose.
+This is an academic project created as part of the CS 6727 Information Security Practicum course at the Georgia Institute of Technology. This project is developed with the intention of using this tool only for educational purpose.
