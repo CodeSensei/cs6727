@@ -2,7 +2,7 @@
 
 
 ## Description
-In 1997, CAPTCHA was invented by Eran Reshef, Gili Raanan and Eilon Solan to protect websites from bad bot actors. Unfortunately in 2022, using captcha or using just one protection method to protect against shopping bots no longer work. The solution is to utilize a combination of the best bot protection techniques. Based on the Forrester report citing the best Bot management tools available today, some of the best techniues used are fingerprinting, IP reputationm, behavior techniques. This project provides the implemenation of the aformentioned techniques, as well as a custom devloped technique for limiting purchase quantity and checking of jigged addresses.
+In 1997, CAPTCHA was invented by Eran Reshef, Gili Raanan, and Eilon Solan to protect websites from bad bot actors. Unfortunately in 2022, using captcha or using just one protection method to protect against shopping bots no longer work. The solution is to utilize a combination of the best bot protection techniques. Based on the Forrester report citing the best Bot management tools available today, some of the best techniques used are fingerprinting, IP reputation, and behavior techniques. This project provides the implementation of the aforementioned techniques, as well as a custom developed technique for limiting purchase quantity and checking jigged addresses.
 ## Features
 - Demo of limiting purchase quantity and checking of jigged addresses
 - Datadome API implementation
