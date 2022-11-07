@@ -13,8 +13,35 @@
 Simply clone this project down to your local repository and open the project using Visual Studio 2022 or higher. 
 
 ### License Key Setup
-You can add your license keys in the appsettings.json file.
+You must add your own license keys in the appsettings.json file for the application to work.
 
+**You will need to add a key for Datadome:**
+
+**You will need to add a key for Google reCaptcha**
+```
+{
+  "DataDomeConfiguration": {
+    "ApiDomain": "api.datadome.co",
+    "LicenseKey": "",
+    "ApiProtocol": "https"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "GoogleRecaptchaV3Config": {
+    "SiteKey": "",
+    "SecretKey": "",
+    "VerifyURL": "https://www.google.com/recaptcha/api/siteverify"
+  },
+  "ConnectionStrings": {
+    "ShoppingContext": "Server=(localdb)\\mssqllocaldb;Database=Shopping.Data;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}
+```
 ### Libraries referenced
 ![Nuget packages](https://github.com/samleeatl/cs6727/blob/main/nuget.PNG)
 
