@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yb6b0oCz9nI4DUzy23m5OKcwldZwofBBvfyoYsy6F3I=",
+  "Hash": "+K3KXVXlWCNeb+A3RZUeK3AA4hkr+oToQt4EPIwifO8=",
   "Source": "Shopping",
   "BasePath": "_content/Shopping",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Projects\\GitHub\\cs6727\\Shopping\\Shopping\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Shopping.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Projects\\GitHub\\cs6727\\Shopping\\Shopping\\wwwroot\\cart.PNG",
+      "SourceId": "Shopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\GitHub\\cs6727\\Shopping\\Shopping\\wwwroot\\",
+      "BasePath": "_content/Shopping",
+      "RelativePath": "cart.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cart.PNG"
+    },
+    {
+      "Identity": "C:\\Projects\\GitHub\\cs6727\\Shopping\\Shopping\\wwwroot\\credit_card.PNG",
+      "SourceId": "Shopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\GitHub\\cs6727\\Shopping\\Shopping\\wwwroot\\",
+      "BasePath": "_content/Shopping",
+      "RelativePath": "credit_card.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\credit_card.PNG"
     },
     {
       "Identity": "C:\\Projects\\GitHub\\cs6727\\Shopping\\Shopping\\wwwroot\\css\\site.css",
@@ -1086,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ps5.PNG"
+    },
+    {
+      "Identity": "C:\\Projects\\GitHub\\cs6727\\Shopping\\Shopping\\wwwroot\\shipping.PNG",
+      "SourceId": "Shopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\GitHub\\cs6727\\Shopping\\Shopping\\wwwroot\\",
+      "BasePath": "_content/Shopping",
+      "RelativePath": "shipping.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\shipping.PNG"
     }
   ]
 }
